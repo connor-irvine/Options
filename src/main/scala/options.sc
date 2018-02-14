@@ -72,4 +72,5 @@ def find[A](list : List[A], fn : A => Boolean) : Option[A] = {
       case Nil => list
       case head :: tail => f(head) :: intMap(tail, f)
     }
+  }
     /////////////////////////////////////////////////////////
